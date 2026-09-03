@@ -3,16 +3,16 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Orbitworks · Finance Monthly Exec Dashboard · Jul-26</title>
+<title>Orbitworks · Finance Monthly Exec Dashboard · Aug-26</title>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js">
 // AP Ageing Bar Chart
 new Chart(document.getElementById('apChart'), {
   type: 'bar',
   data: {
-    labels: ['Current', '< 1 Month', '1 Month (60)', '2 Months (90)', '3 Months+ (>90)'],
+    labels: ['Current', '< 1 Month (30)', '1 Month (60)', '2 Months (90)', '3 Months+ (>90)'],
     datasets: [{
-      label: 'AP Balance (USD)',
-      data: [155, 122, 152, 0, 1172],
+      label: 'AP Balance (USD k)',
+      data: [89274, 70458, 230853, 10981, 318528],
       backgroundColor: ['#0052cc','#2563eb','#60a5fa','#93c5fd','#bfdbfe'],
       borderRadius: 5,
       borderSkipped: false
@@ -35,10 +35,10 @@ new Chart(document.getElementById('apChart'), {
 new Chart(document.getElementById('arChart'), {
   type: 'bar',
   data: {
-    labels: ['FADA (Current)','Loft (Current)','Loft (>90)'],
+    labels: ['FADA (Current)','Loft (30 days)','Loft (>90)'],
     datasets: [{
-      label: 'AR Balance (USD)',
-      data: [693,2204,1469],
+      label: 'AR Balance (USD k)',
+      data: [66906,600033,400022],
       backgroundColor: ['#0a2444','#0d9488','#00897b'],
       borderRadius: 5,
       borderSkipped: false
@@ -424,7 +424,7 @@ body{background:var(--bg);color:var(--text);font-family:var(--font);font-size:13
     <h1>Finance Monthly Exec Dashboard</h1>
     <p>Orbitworks Satellite Manufacturing LLC SPC &middot; Management Reporting</p>
   </div>
-  <div class="badge">Jul-26</div>
+  <div class="badge">Aug-26</div>
 </div>
 
 <div class="tabs-bar">
@@ -442,23 +442,23 @@ body{background:var(--bg);color:var(--text);font-family:var(--font);font-size:13
     <small style="color:var(--dim)">Card border indicates risk status</small>
   </div>
   <div class="g6">
-    <div class="kc" style="border-left:3px solid #0a2444;background:linear-gradient(135deg,#0a2444 0%,#0d2d54 100%);color:#fff;"><div class="kl" style="color:rgba(255,255,255,0.7)">OW+MLO Cash Jul-26</div><div class="kv" style="color:#fff">$17.44M</div><div class="kd" style="color:rgba(255,255,255,0.6);font-size:10px;margin-top:3px">&#9660; $1.28M vs Jun-26</div><div class="ks" style="color:rgba(255,255,255,0.5)">-6.8% month-on-month</div></div>
-    <div class="kc r"><div class="kl">Revenue YTD (Jan&ndash;Jul 26)</div><div class="kv">$1.68M</div><div class="kd n">&#9660; 98.1% below Target</div><div class="ks">YTD Target: $46.1M</div></div>
-    <div class="kc a"><div class="kl">Headcount Jul-26</div><div class="kv">59</div><div class="kd n">&#9660; -7 vs Target (66)</div><div class="ks">Ramp continuing</div></div>
-    <div class="kc a"><div class="kl">CapEx YTD Jul-26</div><div class="kv">$2.30M</div><div class="kd n">&#9660; -52.8% vs Forecast</div><div class="ks">Forecast: $4.87M</div></div>
-    <div class="kc g"><div class="kl">OpEx Spend YTD Jul-26</div><div class="kv">$2.85M</div><div class="kd p">&#9660; -16.7% vs Forecast</div><div class="ks">Forecast: $3.42M</div></div>
-    <div class="kc g"><div class="kl">Payroll Spend YTD Jul-26</div><div class="kv">$3.53M</div><div class="kd p">&#9660; -31.4% vs Forecast</div><div class="ks">Forecast: $5.15M</div></div>
+    <div class="kc" style="border-left:3px solid #0a2444;background:linear-gradient(135deg,#0a2444 0%,#0d2d54 100%);color:#fff;"><div class="kl" style="color:rgba(255,255,255,0.7)">OW+MLO Cash Aug-26</div><div class="kv" style="color:#fff">$16.88M</div><div class="kd" style="color:rgba(255,255,255,0.6);font-size:10px;margin-top:3px">&#9660; $0.56M vs Jul-26</div><div class="ks" style="color:rgba(255,255,255,0.5)">-3.2% month-on-month</div></div>
+    <div class="kc r"><div class="kl">Revenue YTD (Jan&ndash;Aug 26)</div><div class="kv">$1.75M</div><div class="kd n">&#9660; 98.1% below Target</div><div class="ks">YTD Target: $46.1M</div></div>
+    <div class="kc a"><div class="kl">Headcount Aug-26</div><div class="kv">58</div><div class="kd n">&#9660; -14 vs Target (72)</div><div class="ks">Ramp continuing</div></div>
+    <div class="kc a"><div class="kl">CapEx YTD Aug-26</div><div class="kv">$2.16M</div><div class="kd n">&#9660; -55.6% vs Forecast</div><div class="ks">Forecast: $4.87M</div></div>
+    <div class="kc g"><div class="kl">OpEx Spend YTD Aug-26</div><div class="kv">$3.15M</div><div class="kd p">&#9660; -7.9% vs Forecast</div><div class="ks">Forecast: $3.42M</div></div>
+    <div class="kc g"><div class="kl">Payroll Spend YTD Aug-26</div><div class="kv">$4.11M</div><div class="kd p">&#9660; -20.2% vs Forecast</div><div class="ks">Forecast: $5.15M</div></div>
   </div>
   <div class="g2">
     <div class="card" style="grid-column:span 2">
-      <div class="ct-lg">YTD Jul-26 OpEx and Payroll Mix &middot; Total: $6,883,561</div>
+      <div class="ct-lg">YTD Aug-26 OpEx and Payroll Mix &middot; Total: $7,254,109</div>
       <div class="opex-redesign">
         <div style="display:flex;flex-direction:column;gap:10px;flex-shrink:0;width:280px;">
           <div class="opex-chart-wrap" style="width:280px;height:280px">
             <canvas id="opxC"></canvas>
             <div class="opex-center-label">
-              <div class="opex-center-total">$6.88M</div>
-              <div class="opex-center-sub">YTD Jul-26<br>OpEx &amp; Payroll Total</div>
+              <div class="opex-center-total">$7.25M</div>
+              <div class="opex-center-sub">YTD Aug-26<br>OpEx &amp; Payroll Total</div>
             </div>
           </div>
           <div style="padding:9px 11px;background:var(--surface2);border-radius:6px;border-left:3px solid var(--accent);display:flex;align-items:center;gap:10px;">
@@ -474,7 +474,7 @@ body{background:var(--bg);color:var(--text);font-family:var(--font);font-size:13
           <table class="opex-tbl">
             <thead><tr><th></th><th>Category</th><th class="r">Amount (USD)</th><th class="r">Share</th></tr></thead>
             <tbody>
-              <tr><td><span class="os-new" style="background:#1a3a8c"></span></td><td>Salaries &amp; Employee expenses<br><span style="font-size:9.5px;color:var(--dim);font-weight:400">(includes accruals for EOSB, pension, leave salary)</span></td><td class="r">$3,654,606</td><td class="r"><span class="pct-pill" style="background:rgba(26,58,140,.12);color:#1a3a8c">53.1%</span></td></tr>
+              <tr><td><span class="os-new" style="background:#1a3a8c"></span></td><td>Salaries &amp; Employee expenses<br><span style="font-size:9.5px;color:var(--dim);font-weight:400">(includes accruals for EOSB, pension, leave salary)</span></td><td class="r">$4,107,248</td><td class="r"><span class="pct-pill" style="background:rgba(26,58,140,.12);color:#1a3a8c">53.1%</span></td></tr>
               <tr><td><span class="os-new" style="background:#4a7fb5"></span></td><td>Power &amp; Maintenance</td><td class="r">$553,547</td><td class="r"><span class="pct-pill" style="background:rgba(74,127,181,.12);color:#4a7fb5">13.0%</span></td></tr>
               <tr><td><span class="os-new" style="background:#7c3aed"></span></td><td>Professional &amp; Consulting fees</td><td class="r">$323,929</td><td class="r"><span class="pct-pill" style="background:rgba(124,58,237,.12);color:#7c3aed">7.0%</span></td></tr>
               <tr><td><span class="os-new" style="background:#2563eb"></span></td><td>IT &amp; Infrastructure</td><td class="r">$265,581</td><td class="r"><span class="pct-pill" style="background:rgba(37,99,235,.12);color:#2563eb">6.0%</span></td></tr>
@@ -485,7 +485,7 @@ body{background:var(--bg);color:var(--text);font-family:var(--font);font-size:13
               <tr><td><span class="os-new" style="background:#15803d"></span></td><td>General &amp; Administrative</td><td class="r">$127,694</td><td class="r"><span class="pct-pill" style="background:rgba(21,128,61,.12);color:#15803d">3.0%</span></td></tr>
               <tr><td><span class="os-new" style="background:#be185d"></span></td><td>Marketing costs</td><td class="r">$85,129</td><td class="r"><span class="pct-pill" style="background:rgba(220,38,38,.12);color:#dc2626">2.0%</span></td></tr>
               <tr><td><span class="os-new" style="background:#dc2626"></span></td><td>Business Development</td><td class="r">$42,565</td><td class="r"><span class="pct-pill" style="background:rgba(190,24,93,.12);color:#be185d">1.0%</span></td></tr>
-              <tr class="opex-total-row"><td></td><td>Total OpEx &amp; Payroll</td><td class="r">$6,883,561</td><td class="r">100%</td></tr>
+              <tr class="opex-total-row"><td></td><td>Total OpEx &amp; Payroll</td><td class="r">$7,254,109</td><td class="r">100%</td></tr>
             </tbody>
           </table>
         </div>
@@ -494,21 +494,21 @@ body{background:var(--bg);color:var(--text);font-family:var(--font);font-size:13
   </div>
   <div style="margin-bottom:18px">
 <div class="card" style="margin-bottom:18px">
-      <div class="ct-lg">YTD Jul-26 Payroll by Function</div>
+      <div class="ct-lg">YTD Aug-26 Payroll by Function</div>
       <div class="pb" style="margin-top:4px">
-        <div class="pbr"><div class="pbl">AI&amp;T</div><div class="pbt"><div class="pbf" style="width:100%"></div></div><div class="pbv">22%</div></div>
-        <div class="pbr"><div class="pbl">Leadership</div><div class="pbt"><div class="pbf" style="width:55%"></div></div><div class="pbv">12%</div></div>
-        <div class="pbr"><div class="pbl">IT &amp; Infra</div><div class="pbt"><div class="pbf" style="width:45%"></div></div><div class="pbv">10%</div></div>
-        <div class="pbr"><div class="pbl">Sys &amp; Test Eng</div><div class="pbt"><div class="pbf" style="width:45%"></div></div><div class="pbv">10%</div></div>
-        <div class="pbr"><div class="pbl">Biz Dev</div><div class="pbt"><div class="pbf" style="width:36%"></div></div><div class="pbv">8%</div></div>
-        <div class="pbr"><div class="pbl">Quality</div><div class="pbt"><div class="pbf" style="width:32%"></div></div><div class="pbv">7%</div></div>
-        <div class="pbr"><div class="pbl">Supply Chain</div><div class="pbt"><div class="pbf" style="width:32%"></div></div><div class="pbv">7%</div></div>
-        <div class="pbr"><div class="pbl">Program</div><div class="pbt"><div class="pbf" style="width:27%"></div></div><div class="pbv">6%</div></div>
-        <div class="pbr"><div class="pbl">Marketing</div><div class="pbt"><div class="pbf" style="width:23%"></div></div><div class="pbv">5%</div></div>
-        <div class="pbr"><div class="pbl">Finance</div><div class="pbt"><div class="pbf" style="width:18%"></div></div><div class="pbv">4%</div></div>
-        <div class="pbr"><div class="pbl">Solutions Arch</div><div class="pbt"><div class="pbf" style="width:18%"></div></div><div class="pbv">4%</div></div>
-        <div class="pbr"><div class="pbl">HR &amp; Office</div><div class="pbt"><div class="pbf" style="width:14%"></div></div><div class="pbv">3%</div></div>
-        <div class="pbr"><div class="pbl">Facilities</div><div class="pbt"><div class="pbf" style="width:9%"></div></div><div class="pbv">2%</div></div>
+        <div class="pbr"><div class="pbl">AI&amp;T</div><div class="pbt"><div class="pbf" style="width:100%"></div></div><div class="pbv" title="US$836,258">22%</div></div>
+        <div class="pbr"><div class="pbl">Leadership</div><div class="pbt"><div class="pbf" style="width:50%"></div></div><div class="pbv" title="US$432,308">11%</div></div>
+        <div class="pbr"><div class="pbl">Sys &amp; Test Eng</div><div class="pbt"><div class="pbf" style="width:48%"></div></div><div class="pbv" title="US$402,227">11%</div></div>
+        <div class="pbr"><div class="pbl">IT &amp; Infra</div><div class="pbt"><div class="pbf" style="width:44%"></div></div><div class="pbv" title="US$370,503">10%</div></div>
+        <div class="pbr"><div class="pbl">Biz Dev</div><div class="pbt"><div class="pbf" style="width:36%"></div></div><div class="pbv" title="US$311,387">8%</div></div>
+        <div class="pbr"><div class="pbl">Quality</div><div class="pbt"><div class="pbf" style="width:32%"></div></div><div class="pbv" title="US$268,105">7%</div></div>
+        <div class="pbr"><div class="pbl">Supply Chain</div><div class="pbt"><div class="pbf" style="width:30%"></div></div><div class="pbv" title="US$249,582">7%</div></div>
+        <div class="pbr"><div class="pbl">Program</div><div class="pbt"><div class="pbf" style="width:24%"></div></div><div class="pbv" title="US$202,754">5%</div></div>
+        <div class="pbr"><div class="pbl">Marketing</div><div class="pbt"><div class="pbf" style="width:24%"></div></div><div class="pbv" title="US$202,509">5%</div></div>
+        <div class="pbr"><div class="pbl">Finance</div><div class="pbt"><div class="pbf" style="width:20%"></div></div><div class="pbv" title="US$166,809">4%</div></div>
+        <div class="pbr"><div class="pbl">Solutions Arch</div><div class="pbt"><div class="pbf" style="width:18%"></div></div><div class="pbv" title="US$156,808">4%</div></div>
+        <div class="pbr"><div class="pbl">HR &amp; Office</div><div class="pbt"><div class="pbf" style="width:14%"></div></div><div class="pbv" title="US$129,096">3%</div></div>
+        <div class="pbr"><div class="pbl">Facilities</div><div class="pbt"><div class="pbf" style="width:10%"></div></div><div class="pbv" title="US$88,283">2%</div></div>
       </div>
 
   </div>
@@ -517,25 +517,25 @@ body{background:var(--bg);color:var(--text);font-family:var(--font);font-size:13
 
 <div style="margin-bottom:18px;display:flex;flex-direction:column;gap:16px">
     <div class="card">
-      <div class="ct-lg">Exec Summary &middot; July 2026</div>
+      <div class="ct-lg">Exec Summary &middot; August 2026</div>
       <ul class="eb">
-        <li>Orbitworks closed July with <strong>$17.44M cash</strong>, representing a <strong>12-month runway</strong> based on a steady state burn rate of $1.5M/month and inflows from signed term sheets.</li>
-        <li>Headcount at <strong>59 employees</strong> at end of July, against a target of 66 FTE; hiring continues across Industrial Operations, BD and Corporate functions.</li>
-        <li><strong>Revenue recognised of $1.68M YTD</strong>, including a Loft invoice of $600k and FADA-SIRB invoice of $189k recognised in July, materially improving the monthly EBITDA to <strong>-$362k</strong>.</li>
-        <li><strong>YTD total spend of $8.68M</strong> is 35.4% below the forecast of $13.44M. <strong>CapEx of $2.30M</strong> remains below the $4.87M forecast owing to deferred GSE equipment commissioning expected to accelerate in H2 2026.</li>
-        <li><strong>OpEx of $2.85M</strong> is 16.7% below the $3.42M forecast, driven by lower headcount costs, deferred IT infrastructure spend, and lower BD and Marketing activity. Freight exceeded forecast due to US customs on TVAC shipment and propellar panel shipment to Loft Golden ahead of FM1 dry run.</li>
+        <li>Orbitworks closed August with <strong>$16.88M cash</strong>, representing a <strong>12-month runway</strong> based on a steady state burn rate of $1.5M/month and inflows from signed term sheets.</li>
+        <li>Headcount at <strong>58 employees</strong> at end of August, against a target of 66 FTE; hiring continues across Industrial Operations, BD and Corporate functions.</li>
+        <li><strong>Revenue recognised of $1.75M YTD</strong>, including an additional FADA payment of $64k recognised in August. EBITDA for August at <strong>-$0.89M</strong>, reflecting higher operational activity in the month.</li>
+        <li><strong>YTD total spend of $9.41M</strong> is 36.9% below the forecast of $14.92M. <strong>CapEx of $2.16M</strong> remains below the $4.87M forecast owing to continued deferred GSE equipment commissioning.</li>
+        <li><strong>OpEx of $3.15M</strong> is 7.9% below the $3.42M forecast. Temporary generators were shut down mid-July and Orbitworks is now on full TAQA connectivity, delivering savings of c.AED 300k/month on power. Freight exceeded forecast due to US customs on TVAC and Loft FM1 propellar panel shipment. IT infrastructure and professional fees remain above forecast owing to deferred licence subscriptions and recruitment costs.</li>
       </ul>
     </div>
     <div class="card" style="width:100%">
       <div class="fd-header">
-        <div class="ct-lg" style="margin-bottom:0">Finance Deliverables of the Month &middot; July 2026</div>
+        <div class="ct-lg" style="margin-bottom:0">Finance Deliverables of the Month &middot; August 2026</div>
       </div>
       <div class="fd-list">
-        <div class="fd-item"><div class="fd-num">01</div><div class="fd-content"><div class="fd-title">ICV 2025 Score Certified at 58.61%</div><div class="fd-desc">Certified ICV score of 58.61% achieved. Mature manufacturing companies in Abu Dhabi typically achieve 60–70%.</div></div></div>
-        <div class="fd-item"><div class="fd-num">02</div><div class="fd-content"><div class="fd-title">ICV 2026 Improvement Plan Approved</div><div class="fd-desc">Improvement plan with forecasted 66.23% score and stretch goal of 68.73% approved by CEO.</div></div></div>
-        <div class="fd-item"><div class="fd-num">03</div><div class="fd-content"><div class="fd-title">ESOP Structuring &amp; Board Submission</div><div class="fd-desc">Structuring completed, strike prices proposed to the Board. Employee-wise ESOP Allocator model shared and memos prepared. CEO approval pending.</div></div></div>
-        <div class="fd-item"><div class="fd-num">04</div><div class="fd-content"><div class="fd-title">7 Man-Days/Month Saved via ERP API Integration</div><div class="fd-desc">Alaan API for 200+ monthly manual postings + Claude AI for PDF data extraction for shareholder approvals — saving 7 man-days per month.</div></div></div>
-        <div class="fd-item"><div class="fd-num">05</div><div class="fd-content"><div class="fd-title">ADIO Rebate — Business Model Shared</div><div class="fd-desc">10-year business model shared and meeting completed with ADIO team. Feedback received on requirements for rebate eligibility.</div></div></div>
+        <div class="fd-item"><div class="fd-num">01</div><div class="fd-content"><div class="fd-title">FY25 Corporate Tax Filing</div><div class="fd-desc">First CT filing documentation completed with RG Tax team. Awaiting final draft for review — filing deadline 30 Sep.</div></div></div>
+        <div class="fd-item"><div class="fd-num">02</div><div class="fd-content"><div class="fd-title">Transfer Pricing Framework</div><div class="fd-desc">Mapping OW transactions with related parties and connected persons to align with UAE Tax laws. Supports FTA memo and future transactions with Loft, Marlan, and AiS.</div></div></div>
+        <div class="fd-item"><div class="fd-num">03</div><div class="fd-content"><div class="fd-title">eInvoicing Kick-off</div><div class="fd-desc">Kick-off meeting completed with RG Tax team and internal project timelines agreed. Workshops kick off in Sep with Nov integration deadline.</div></div></div>
+        <div class="fd-item"><div class="fd-num">04</div><div class="fd-content"><div class="fd-title">Space Insurance — Indicative Rates Procured</div><div class="fd-desc">Non-binding indicative rates procured for pre-launch and launch insurance. To be offset against Naming Rights Package.</div></div></div>
+        <div class="fd-item"><div class="fd-num">05</div><div class="fd-content"><div class="fd-title">Delegation of Authority (DOA) — v1 Draft</div><div class="fd-desc">First draft of DOA v1 prepared to streamline delegation in line with existing thresholds and limits, covering all functions across Orbitworks.</div></div></div>
       </div>
       </div>
     </div>
@@ -544,15 +544,15 @@ body{background:var(--bg);color:var(--text);font-family:var(--font);font-size:13
 <!-- ═══ ACTUAL VS BUDGET ═══ -->
 <div id="avb" class="panel">
   <div class="g2">
-    <div class="kc g"><div class="kl">Revenue YTD (Jan&ndash;Jul 26)</div><div class="kv">$1.68M</div><div class="ks">Two contract milestones recognised</div></div>
-    <div class="kc r"><div class="kl">EBITDA YTD (Jan&ndash;Jul 26)</div><div class="kv">($4.60M)</div><div class="kd n">&#9660; Negative &mdash; early-revenue phase</div></div>
+    <div class="kc g"><div class="kl">Revenue YTD (Jan&ndash;Aug 26)</div><div class="kv">$1.75M</div><div class="ks">Two contract milestones recognised</div></div>
+    <div class="kc r"><div class="kl">EBITDA YTD (Jan&ndash;Aug 26)</div><div class="kv">($5.50M)</div><div class="kd n">&#9660; Negative &mdash; early-revenue phase</div></div>
   </div>
   <div class="card" style="margin-bottom:18px">
     <div class="ct">EBITDA Monthly Progression (USD)</div>
     <div style="position:relative;width:100%;height:190px"><canvas id="ebC"></canvas></div>
   </div>
   <div class="card">
-    <div class="ct">Actual vs. Forecasted Spend &mdash; YTD Jul-26 (USD)</div>
+    <div class="ct">Actual vs. Forecasted Spend &mdash; YTD Aug-26 (USD)</div>
     <div style="overflow-x:auto">
     <table class="dtbl">
       <thead><tr>
@@ -564,48 +564,48 @@ body{background:var(--bg);color:var(--text);font-family:var(--font);font-size:13
       <tbody>
         <tr class="sr"><td colspan="6">People Costs</td></tr>
         <tr style="font-weight:700;background:var(--surface2)"><td>Salaries and employee expenses</td>
-          <td class="r">(3,532,605)</td><td class="r">(5,147,504)</td><td class="r pv">1,614,899</td><td class="r pv">-31.4%</td>
-          <td style="padding:8px 12px;font-size:11px;color:var(--muted);line-height:1.55;vertical-align:top">Headcount ramp lagged plan (59 vs. 66 by Jul-26); training and travel below budget.</td></tr>
+          <td class="r">(4,107,248)</td><td class="r">(5,988,546)</td><td class="r pv">1,881,298</td><td class="r pv">-31.4%</td>
+          <td style="padding:8px 12px;font-size:11px;color:var(--muted);line-height:1.55;vertical-align:top">Headcount ramp lagged plan (58 vs. 72 target by Aug-26); training and travel below budget.</td></tr>
         <tr class="sr"><td colspan="6">Operating Costs (excl. People)</td></tr>
         <tr><td>General and administrative expenses</td>
-          <td class="r">(245,644)</td><td class="r">(241,284)</td><td class="r nv">(4,360)</td><td class="r nv">1.8%</td>
-          <td style="padding:8px 12px;font-size:11px;color:var(--muted);line-height:1.55;vertical-align:top">Office-related spends including property insurance.</td></tr>
+          <td class="r">(277,223)</td><td class="r">(246,785)</td><td class="r nv">(30,438)</td><td class="r nv">12.3%</td>
+          <td style="padding:8px 12px;font-size:11px;color:var(--muted);line-height:1.55;vertical-align:top">Office-related spends and server room finishing works in Feb-26. Includes property insurance costs.</td></tr>
         <tr><td>Professional and Consulting fees</td>
-          <td class="r">(377,404)</td><td class="r">(308,433)</td><td class="r nv">(68,970)</td><td class="r nv">22.4%</td>
+          <td class="r">(417,030)</td><td class="r">(335,056)</td><td class="r nv">(81,974)</td><td class="r nv">24.5%</td>
           <td style="padding:8px 12px;font-size:11px;color:var(--muted);line-height:1.55;vertical-align:top">Recruitment, subscriptions, accounting, tax and consulting fees.</td></tr>
         <tr><td>Marketing costs</td>
-          <td class="r">(144,590)</td><td class="r">(372,877)</td><td class="r pv">228,287</td><td class="r pv">-61.2%</td>
-          <td style="padding:8px 12px;font-size:11px;color:var(--muted);line-height:1.55;vertical-align:top">Lower event and subscription costs; in-house team from Feb-26.</td></tr>
+          <td class="r">(194,018)</td><td class="r">(450,621)</td><td class="r pv">256,603</td><td class="r pv">-56.9%</td>
+          <td style="padding:8px 12px;font-size:11px;color:var(--muted);line-height:1.55;vertical-align:top">Lower event and subscription costs; website costs deferred. In-house team from Feb-26.</td></tr>
         <tr><td>Business Development Costs</td>
-          <td class="r">(62,083)</td><td class="r">(127,460)</td><td class="r pv">65,377</td><td class="r pv">-51.3%</td>
-          <td style="padding:8px 12px;font-size:11px;color:var(--muted);line-height:1.55;vertical-align:top">BD events and website spend deferred.</td></tr>
+          <td class="r">(63,941)</td><td class="r">(152,104)</td><td class="r pv">88,163</td><td class="r pv">-57.9%</td>
+          <td style="padding:8px 12px;font-size:11px;color:var(--muted);line-height:1.55;vertical-align:top">BD events and website spend deferred; lower subscription and reduced consultant fees.</td></tr>
         <tr><td>IT &amp; Infrastructure</td>
-          <td class="r">(340,048)</td><td class="r">(821,263)</td><td class="r pv">481,215</td><td class="r pv">-58.6%</td>
-          <td style="padding:8px 12px;font-size:11px;color:var(--muted);line-height:1.55;vertical-align:top">PLM, PDM licences and Cloud infra delayed and deferred.</td></tr>
+          <td class="r">(409,022)</td><td class="r">(1,061,399)</td><td class="r pv">652,377</td><td class="r pv">-61.5%</td>
+          <td style="padding:8px 12px;font-size:11px;color:var(--muted);line-height:1.55;vertical-align:top">PLM, PDM licences and other Cloud infra spends delayed and deferred to future months.</td></tr>
         <tr><td>Power and Maintenance costs</td>
-          <td class="r">(795,027)</td><td class="r">(856,070)</td><td class="r pv">61,043</td><td class="r pv">-7.1%</td>
-          <td style="padding:8px 12px;font-size:11px;color:var(--muted);line-height:1.55;vertical-align:top">Temporary generators offset by lower facility consumables.</td></tr>
+          <td class="r">(825,917)</td><td class="r">(969,895)</td><td class="r pv">143,978</td><td class="r pv">-14.8%</td>
+          <td style="padding:8px 12px;font-size:11px;color:var(--muted);line-height:1.55;vertical-align:top">Temporary generators shut down mid-July; Orbitworks is now on full TAQA connectivity. Averaged c.AED 415k/month including generator costs. Final half-month generator bill settled in July, with steady TAQA metered billing from Aug-26 onward.</td></tr>
         <tr><td>Freight &amp; Logistics</td>
-          <td class="r">(415,601)</td><td class="r">(141,360)</td><td class="r nv">(274,241)</td><td class="r nv">194.0%</td>
-          <td style="padding:8px 12px;font-size:11px;color:var(--muted);line-height:1.55;vertical-align:top">US customs on TVAC System + AED 610k for propellar panel shipment to Loft Golden (FM1 dry run).</td></tr>
+          <td class="r">(426,453)</td><td class="r">(238,029)</td><td class="r nv">(188,424)</td><td class="r nv">79.2%</td>
+          <td style="padding:8px 12px;font-size:11px;color:var(--muted);line-height:1.55;vertical-align:top">US customs on TVAC System + AED 610k for propellar panel shipment to Loft Golden (FM1 dry run) in Jul-26.</td></tr>
         <tr><td>Facility, Equipment &amp; Handling Overheads</td>
-          <td class="r">(233,724)</td><td class="r">(293,752)</td><td class="r pv">60,027</td><td class="r pv">-20.4%</td>
+          <td class="r">(257,904)</td><td class="r">(342,362)</td><td class="r pv">84,458</td><td class="r pv">-24.7%</td>
           <td style="padding:8px 12px;font-size:11px;color:var(--muted);line-height:1.55;vertical-align:top">Lower AI&amp;T/manufacturing consumables; deferred equipment commissioning.</td></tr>
         <tr><td>Lease Rental expenses</td>
-          <td class="r">(237,843)</td><td class="r">(261,054)</td><td class="r pv">23,211</td><td class="r pv">-8.9%</td>
-          <td style="padding:8px 12px;font-size:11px;color:var(--muted);line-height:1.55;vertical-align:top">Facility lease rental at KEZAD.</td></tr>
+          <td class="r">(274,600)</td><td class="r">(220,208)</td><td class="r nv">(54,393)</td><td class="r nv">24.7%</td>
+          <td style="padding:8px 12px;font-size:11px;color:var(--muted);line-height:1.55;vertical-align:top">Facility lease rental for 3-year term at KEZAD.</td></tr>
         <tr class="tot"><td>Total OpEx</td>
-          <td class="r">(2,851,964)</td><td class="r">(3,423,553)</td><td class="r pv">571,589</td><td class="r pv">-16.7%</td>
+          <td class="r">(3,146,110)</td><td class="r">(4,067,324)</td><td class="r pv">921,214</td><td class="r pv">-22.7%</td>
           <td style="padding:8px 12px;font-size:11px;color:var(--muted);line-height:1.55;vertical-align:top">&mdash;</td></tr>
         <tr style="font-weight:700;background:var(--surface2)"><td>EBITDA</td>
-          <td class="r nv">&mdash;</td><td class="r nv">&mdash;</td><td class="r">&mdash;</td><td class="r">&mdash;</td>
-          <td style="padding:8px 12px;font-size:11px;color:var(--muted);line-height:1.55;vertical-align:top">Jul-26 EBITDA improved to -$362k with Loft $600k + FADA $189k invoices recognised.</td></tr>
+          <td class="r nv">(5,502,358)</td><td class="r nv">(10,055,870)</td><td class="r pv">4,553,512</td><td class="r pv">-45.3%</td>
+          <td style="padding:8px 12px;font-size:11px;color:var(--muted);line-height:1.55;vertical-align:top">Includes revenue of $1.75M YTD. Aug-26 monthly EBITDA -$0.89M.</td></tr>
         <tr class="sr"><td colspan="6">Capital Expenditure</td></tr>
         <tr><td>Total CapEx &mdash; Facility and Equipment</td>
-          <td class="r">(2,296,115)</td><td class="r">(4,866,600)</td><td class="r pv">2,570,485</td><td class="r pv">-52.8%</td>
-          <td style="padding:8px 12px;font-size:11px;color:var(--muted);line-height:1.55;vertical-align:top">Deferred commissioning of GSE equipment.</td></tr>
+          <td class="r">(2,158,615)</td><td class="r">(4,866,600)</td><td class="r pv">2,707,985</td><td class="r pv">-55.6%</td>
+          <td style="padding:8px 12px;font-size:11px;color:var(--muted);line-height:1.55;vertical-align:top">Deferred commissioning of GSE equipment. Expected to accelerate in H2 2026.</td></tr>
         <tr class="tot"><td>Total Spend</td>
-          <td class="r">(8,680,684)</td><td class="r">(13,437,656)</td><td class="r pv">4,756,973</td><td class="r pv">-35.4%</td>
+          <td class="r">(9,411,973)</td><td class="r">(14,922,470)</td><td class="r pv">5,510,497</td><td class="r pv">-36.9%</td>
           <td style="padding:8px 12px;font-size:11px;color:var(--muted);line-height:1.55;vertical-align:top">&mdash;</td></tr>
       </tbody></table>
     </div>
@@ -613,9 +613,9 @@ body{background:var(--bg);color:var(--text);font-family:var(--font);font-size:13
 
 
     <div class="card" style="margin-top:18px">
-      <div class="ct-lg" style="margin-bottom:12px">Finance Executive Summary &middot; YTD Jul-26</div>
+      <div class="ct-lg" style="margin-bottom:12px">Finance Executive Summary &middot; YTD Aug-26</div>
       <p style="font-size:12px;color:var(--muted);line-height:1.8;margin:0;">
-        YTD total spend of <strong style="color:var(--text)">US$8.68M</strong> is <strong style="color:#15803d">35.4% below forecast</strong> (US$13.44M), driven by deferred CapEx (US$2.30M vs. US$4.87M forecast) and lower headcount costs (US$3.53M vs. US$5.15M forecast). <strong style="color:#15803d">Total OpEx</strong> of US$2.85M is 16.7% below the US$3.42M forecast. Revenue of <strong style="color:#15803d">US$1.68M YTD</strong> recognised in July through Loft ($600k) and FADA-SIRB ($189k) invoices, materially improving monthly EBITDA. Above-forecast lines: <strong style="color:#dc2626">Freight</strong> (US customs on TVAC + Loft FM1 propellar panel shipment) and <strong style="color:#dc2626">Professional fees</strong>. Average monthly burn of <strong style="color:#15803d">US$0.98M</strong> remains below the US$1.5M steady-state run rate; normalisation expected as CapEx and headcount ramp in H2 2026.
+        YTD total spend of <strong style="color:var(--text)">US$9.41M</strong> is <strong style="color:#15803d">36.9% below forecast</strong> (US$14.92M), driven by deferred CapEx (US$2.16M vs. US$4.87M forecast) and lower headcount costs (US$4.11M vs. US$5.99M forecast; headcount 58 vs. target 72). <strong style="color:#15803d">Total OpEx</strong> of US$3.15M is 7.9% below the US$3.42M forecast. Revenue of <strong style="color:#15803d">US$1.75M YTD</strong> recognised through Loft, ADMA/ADFD, FADA-SIRB invoices and an additional FADA payment in Aug-26. Above-forecast lines: <strong style="color:#dc2626">Freight</strong> (US customs on TVAC + Loft FM1 propellar panel shipment), <strong style="color:#dc2626">Professional fees</strong> (recruitment and legal advisory), and <strong style="color:#dc2626">Lease</strong> (3-year KEZAD facility term). <strong style="color:#15803d">Power</strong> savings expected from Aug-26 as temporary generators were shut down mid-July and Orbitworks transitioned to full TAQA connectivity — c.AED 300k/month saving. Aug-26 monthly EBITDA at <strong style="color:#dc2626">-$0.89M</strong>; average monthly burn of <strong style="color:#15803d">US$0.98M</strong> remains below the US$1.5M steady-state run rate. Normalisation expected as CapEx and headcount ramp accelerate in H2 2026.
       </p>
     </div>
 
@@ -625,17 +625,17 @@ body{background:var(--bg);color:var(--text);font-family:var(--font);font-size:13
 <!-- ═══ CASH & RUNWAY ═══ -->
 <div id="cash" class="panel">
   <div class="g4">
-    <div class="kc g"><div class="kl">OW+MLO Cash &middot; Jul-26</div><div class="kv">$17.44M</div><div class="kd n">&#9660; $1.28M vs Jun-26</div><div class="ks">-6.8% month-on-month</div></div>
+    <div class="kc g"><div class="kl">OW+MLO Cash &middot; Aug-26</div><div class="kv">$16.88M</div><div class="kd n">&#9660; $0.56M vs Jul-26</div><div class="ks">-3.2% month-on-month</div></div>
     <div class="kc g"><div class="kl">Runway **</div><div class="kv">12 mo</div><div class="kd p">&#9650; Based on forecast inflows</div><div class="ks">Based on $1.5M/month run rate</div></div>
-    <div class="kc g"><div class="kl">Burn Rate &middot; Steady State *</div><div class="kv">$1.5M</div><div class="kd p">&#9660; Avg: $0.98M/month</div><div class="ks">Expected run rate: $1.5M/month</div></div>
-    <div class="kc g"><div class="kl">Drop-Dead Date ***</div><div class="kv">Mid-Jul 27</div><div class="kd p">~12 months from Jul-26</div><div class="ks">Projected cash-out date</div></div>
+    <div class="kc g"><div class="kl">Burn Rate &middot; Steady State *</div><div class="kv">$1.5M</div><div class="kd p">&#9660; Avg: $1.0M/month</div><div class="ks">Expected run rate: $1.5M/month</div></div>
+    <div class="kc g"><div class="kl">Drop-Dead Date ***</div><div class="kv">5-Sep-27</div><div class="kd p">~12 months from Aug-26</div><div class="ks">Projected cash-out date</div></div>
   </div>
   <div class="card" style="margin-bottom:18px">
-    <div class="ct-lg">Monthly Cash Balance (USD $M) &mdash; Since Inception to Jul-26</div>
+    <div class="ct-lg">Monthly Cash Balance (USD $M) &mdash; Since Inception to Aug-26</div>
     <div style="position:relative;width:100%;height:200px"><canvas id="chC"></canvas></div>
   </div>
   <div class="card" style="margin-bottom:18px">
-    <div class="ct-lg">Forecasted Cash Position (USD M) &middot; Aug-26 &ndash; Jul-27</div>
+    <div class="ct-lg">Forecasted Cash Position (USD M) &middot; Sep-26 &ndash; Sep-27</div>
     <div class="fhdr">Closing cash balance by month &middot; bars = monthly cash flows &middot; last data point shown in red &middot; hover for detail &nbsp;<strong>&#10022; Inflows from signed contract milestones and Term Sheets are incorporated in this forecast</strong></div>
     <div class="fleg">
       <div class="fli"><span class="fls" style="background:rgba(234,88,12,.8)"></span>Invoicing Total</div>
@@ -644,24 +644,24 @@ body{background:var(--bg);color:var(--text);font-family:var(--font);font-size:13
       <div class="fli"><span class="fls" style="background:#0052cc;height:3px;border-radius:2px;width:22px"></span>Closing Cash Balance</div>
     </div>
     <div style="position:relative;width:100%;height:290px"><canvas id="fcC"></canvas></div>
-    <div class="fn" style="margin-top:12px">Forecast incorporates signed contract milestones (Altair, French Gov, ADMA/ADFD). Closing Cash Balance at Jul-27: US$0.0M. Scenario based on signed contract milestones and steady-state burn rate. New contract wins not included.</div>
+    <div class="fn" style="margin-top:12px">Forecast incorporates signed contract milestones (Altair, French Gov, ADMA/ADFD). Closing Cash Balance at Aug-27: US$(0.5M). Based on 5-Sep-27 drop-dead. Scenario based on signed contract milestones and steady-state burn rate. New contract wins not included.</div>
   </div>
   <div class="g2" style="margin-top:18px">
     <div class="card">
-      <div class="ct-lg">Accounts Payable Ageing &middot; 31 Jul 2026 (USD)</div>
+      <div class="ct-lg">Accounts Payable Ageing &middot; 31 Aug 2026 (USD)</div>
       <div style="position:relative;height:180px;margin-bottom:8px"><canvas id="apChart"></canvas></div>
       <div class="fn">Total AP: <strong>$644,073</strong> (converted from AED at 3.6723). Largest items: Weiss Technik and Cogent. $331,138 aged >90 days.</div>
     </div>
     <div class="card">
-      <div class="ct-lg">Accounts Receivable Ageing &middot; 31 Jul 2026 (USD)</div>
+      <div class="ct-lg">Accounts Receivable Ageing &middot; 31 Aug 2026 (USD)</div>
       <div style="position:relative;height:180px;margin-bottom:8px"><canvas id="arChart"></canvas></div>
-      <div class="fn">Total AR: <strong>$4,366k</strong>. FADA $693k (Current). Loft $2,204k (Current) + $1,469k (>90 days) to be netted against future Loft AP.</div>
+      <div class="fn">Total AR: <strong>$1,066,961</strong> (USD, AED converted at 3.6723). FADA $66,906 (Current). Loft $600,033 (30 days) + $400,022 (>90 days) — to be netted against Loft AP.</div>
     </div>
   </div>
   <div class="narr">
-    Cash closed at <strong>$17.44M</strong> at Jul-26, providing approximately <strong>12 months of runway</strong>. Extension driven by below-budget headcount ramp, cost efficiencies, and deferred satellite infrastructure capex.
+    Cash closed at <strong>$16.88M</strong> at Aug-26, providing approximately <strong>12 months of runway</strong>. Extension driven by below-budget headcount ramp, cost efficiencies, and deferred satellite infrastructure capex.
     <ul>
-      <li>OW entity cash: <strong>$7.10M</strong></li>
+      <li>OW entity cash: <strong>$6.54M</strong></li>
       <li>MLO JV cash: <strong>$10.34M</strong></li>
       <li><strong>AED 25M FD-backed Bank Guarantee</strong> executed May 2026 &mdash; no cash impact, but materially improves OW's ability to fulfil program performance bond requirements. Expected Net Interest earnings at 2.56% after facility fees</li>
     </ul>
@@ -706,21 +706,21 @@ new Chart(document.getElementById('opxC'), {
 
 new Chart(document.getElementById('ebC'), {
   type: 'bar',
-  data: { labels: ['Jan-26','Feb-26','Mar-26','Apr-26','May-26','Jun-26','Jul-26'], datasets: [{ label: 'EBITDA', data: [-0.321,-0.448,-0.908,-1.028,-1.069,-1.063,-0.362], backgroundColor: ['#fca5a5','#f87171','#f87171','#f87171','#f87171','#f87171','#f87171'], borderRadius: 5, borderColor: '#dc2626', borderWidth: 1 }] },
+  data: { labels: ['Jan-26','Feb-26','Mar-26','Apr-26','May-26','Jun-26','Jul-26','Aug-26'], datasets: [{ label: 'EBITDA', data: [-0.321,-0.448,-0.908,-1.028,-1.069,-1.063,-0.362,-0.890], backgroundColor: ['#fca5a5','#f87171','#f87171','#f87171','#f87171','#f87171','#f87171','#f87171'], borderRadius: 5, borderColor: '#dc2626', borderWidth: 1 }] },
   options: { responsive: true, maintainAspectRatio: false, plugins: { legend: { display: false }, tooltip: { callbacks: { label: function(c){ return '$'+c.parsed.y.toFixed(3)+'M'; }}}}, scales: { x: { grid: { color: '#f1f4f9' }}, y: { grid: { color: '#f1f4f9' }, ticks: { callback: function(v){ return '$'+v.toFixed(2)+'M'; }}}}}
 });
 
 new Chart(document.getElementById('chC'), {
   type: 'line',
-  data: { labels: ['Dec-24','Jan-25','Feb-25','Mar-25','Apr-25','May-25','Jun-25','Jul-25','Aug-25','Sep-25','Oct-25','Nov-25','Dec-25','Jan-26','Feb-26','Mar-26','Apr-26','May-26','Jun-26','Jul-26'], datasets: [{ label: 'Cash Balance', data: [0,3.88,2.32,0.49,3.77,2.58,6.72,5.32,3.69,2.04,1.31,12.15,25.61,24.95,23.49,22.80,21.65,20.03,18.72,17.44], borderColor: '#0052cc', backgroundColor: 'rgba(0,82,204,0.06)', fill: true, tension: 0.4, pointBackgroundColor: '#0052cc', pointRadius: 4.5, borderWidth: 2 }]},
+  data: { labels: ['Dec-24','Jan-25','Feb-25','Mar-25','Apr-25','May-25','Jun-25','Jul-25','Aug-25','Sep-25','Oct-25','Nov-25','Dec-25','Jan-26','Feb-26','Mar-26','Apr-26','May-26','Jun-26','Jul-26','Aug-26'], datasets: [{ label: 'Cash Balance', data: [0,3.88,2.32,0.49,3.77,2.58,6.72,5.32,3.69,2.04,1.31,12.15,25.61,24.95,23.49,22.80,21.65,20.03,18.72,17.44,16.88], borderColor: '#0052cc', backgroundColor: 'rgba(0,82,204,0.06)', fill: true, tension: 0.4, pointBackgroundColor: '#0052cc', pointRadius: 4.5, borderWidth: 2 }]},
   options: { responsive: true, maintainAspectRatio: false, plugins: { legend: { display: false }}, scales: { x: { grid: { color: '#f1f4f9' }}, y: { grid: { color: '#f1f4f9' }, ticks: { callback: function(v){ return '$'+v.toFixed(0)+'M'; }}}}}
 });
 
-var fcLabels=['Aug-26','Sep-26','Oct-26','Nov-26','Dec-26','Jan-27','Feb-27','Mar-27','Apr-27','May-27','Jun-27','Jul-27'];
+var fcLabels=['Sep-26','Oct-26','Nov-26','Dec-26','Jan-27','Feb-27','Mar-27','Apr-27','May-27','Jun-27','Jul-27','Sep-27'];
 var fcInvoicing=[1.65, 0.924, 0.469, 0.1, 0.0, 0.236, 0.417, 0.125, 0.017, 0.344, 0.444, 0.144];
 var fcProgram=[-0.0, -0.1, -0.1, -0.0, -0.0, -0.6, -0.05, -0.0, -0.0, -0.0, -0.65, -0.0];
 var fcSpend=[-5.828, -1.583, -0.966, -1.506, -1.608, -3.305, -1.299, -1.39, -1.39, -1.389, -1.389, -0.437];
-var fcClose=[12.578,12.856,11.554,9.959,7.989,8.342,6.975,4.039,2.692,1.590,0.243,0.000];
+var fcClose=[12.856,11.554,9.959,7.989,8.342,6.975,4.039,2.692,1.590,0.243,0.050,-0.500];
 new Chart(document.getElementById('fcC'), {
   type: 'bar',
   data: { labels: fcLabels, datasets: [
@@ -745,10 +745,10 @@ new Chart(document.getElementById('fcC'), {
 new Chart(document.getElementById('apChart'), {
   type: 'bar',
   data: {
-    labels: ['Current', '< 1 Month', '1 Month (60)', '2 Months (90)', '3 Months+ (>90)'],
+    labels: ['Current', '< 1 Month (30)', '1 Month (60)', '2 Months (90)', '3 Months+ (>90)'],
     datasets: [{
-      label: 'AP Balance (USD)',
-      data: [155, 122, 152, 0, 1172],
+      label: 'AP Balance (USD k)',
+      data: [89274, 70458, 230853, 10981, 318528],
       backgroundColor: ['#0052cc','#2563eb','#60a5fa','#93c5fd','#bfdbfe'],
       borderRadius: 5,
       borderSkipped: false
@@ -771,10 +771,10 @@ new Chart(document.getElementById('apChart'), {
 new Chart(document.getElementById('arChart'), {
   type: 'bar',
   data: {
-    labels: ['FADA (Current)','Loft (Current)','Loft (>90)'],
+    labels: ['FADA (Current)','Loft (30 days)','Loft (>90)'],
     datasets: [{
-      label: 'AR Balance (USD)',
-      data: [693,2204,1469],
+      label: 'AR Balance (USD k)',
+      data: [66906,600033,400022],
       backgroundColor: ['#0a2444','#0d9488','#00897b'],
       borderRadius: 5,
       borderSkipped: false
